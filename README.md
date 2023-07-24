@@ -10,14 +10,10 @@ are no buttons though; you will need to use hotkeys. The keys are
 mapped similar to many game layouts, for compact and easy access.
 
 BASIC CONTROLS	
-	Space: Start'n'stop timer
- 
-	E: Start'n'stop timer
- 
+	Space: Startnstop timer
+	E: Startnstop timer
 	R: Reset timer
- 
 	Mouse Button Hold: Drag window around
- 
 	Alt+F4: Close window
 
 DETAILED VIEW - SHOWS FRACTIONS OF SECOND INSTEAD OF HOURS

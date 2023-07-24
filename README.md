@@ -2,7 +2,7 @@
 A minimal stopwatch for speedruns and the like.
 
 # Introduction
-WELCOME TO COUNT-UP STOPWATCH!
+WELCOME TO COUNT-UP STOPWATCH! - 
 This is an extremely simple stopwatch, with military-grade tracking
 of elapsed time, down to milliseconds. There are zero unnecessary
 interfaces, only clock and, if enabled, timer start delay UI. There
@@ -10,7 +10,7 @@ are no buttons though; you will need to use hotkeys. The keys are
 mapped similar to many game layouts, for compact and easy access.
 
 
-BASIC CONTROLS	
+BASIC CONTROLS - 
 	Space: Startnstop timer,
 	E: Startnstop timer,
 	R: Reset timer,
@@ -18,14 +18,14 @@ BASIC CONTROLS
 	Alt+F4: Close window.
 
 
-DETAILED VIEW - SHOWS FRACTIONS OF SECOND INSTEAD OF HOURS
+DETAILED VIEW - SHOWS FRACTIONS OF SECOND INSTEAD OF HOURS - 
 	Q: Toggle detailed view (default on)
  
 You can see if detailed view is on by checking whether the decimal
 point is there. You can't use detailed view if an hour has elapsed.
 
 
-TIMER START COUNTDOWNS - DELAY THE START OF THE STOPWATCH
+TIMER START COUNTDOWNS - DELAY THE START OF THE STOPWATCH - 
 	0: Set timer start countdown to 0S,
 	1: Set timer start countdown to 1S,
 	2: Set timer start countdown to 2S,
@@ -43,7 +43,7 @@ it is not recommended to use this feature where 100% time tracking
 accuracy is important. This may or may not change in the future.
 
 
-POSITION - SNAP THE TIMER
+POSITION - SNAP THE TIMER - 
 	W: Set timer position to top,
 	S: Set timer position to bottom,
 	A+W: Set timer position to top-left,

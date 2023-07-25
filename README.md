@@ -1,7 +1,7 @@
 # Count-Up Stopwatch
 A minimal stopwatch for speedruns and the like.
 
-# Introduction
+## Introduction
 WELCOME TO COUNT-UP STOPWATCH! - 
 This is an extremely simple stopwatch, with military-grade tracking
 of elapsed time, down to milliseconds. There are zero unnecessary
@@ -54,7 +54,7 @@ POSITION - SNAP THE TIMER -
 These hotkeys can quickly change the timer's position, without using
 a mouse. The keys might be slow to respond, to allow for diagonals.
 
-# Downloading source and editing for absolute beginners
+## Downloading source and editing for absolute beginners
 1. Download and install Visual Studio 2022. Visual Studio 2019 is also usable.
 2. Head to the top of this page, and click the "Code" button.
 3. Click "Download ZIP".
@@ -67,3 +67,5 @@ a mouse. The keys might be slow to respond, to allow for diagonals.
 10. Alternatively, if you want debugging enabled, you can simply click "Start".
 11. It should build without errors.
 12. The count-up stopwatch should appear after the build.
+
+## License

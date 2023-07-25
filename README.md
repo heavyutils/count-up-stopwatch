@@ -69,4 +69,4 @@ a mouse. The keys might be slow to respond, to allow for diagonals.
 12. The count-up stopwatch should appear after the build.
 
 ## License
-If you plan to redistribute an edited version of Count-Up Stopwatch, you must make these changes to AssemblyInfo.cs:
+If you plan to publicly redistribute an edited version of Count-Up Stopwatch: In AssemblyInfo.cs, the variables AssemblyTitle AND AssemblyProduct must contain "(fork)".

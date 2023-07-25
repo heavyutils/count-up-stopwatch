@@ -125,7 +125,7 @@ namespace count_up
             this.KeyPreview = true;
             this.Name = "Window";
             this.ShowIcon = false;
-            this.Text = "Countup";
+            this.Text = "Count-Up";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.Window_Load);
             this.ResumeLayout(false);

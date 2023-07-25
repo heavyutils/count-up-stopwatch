@@ -50,21 +50,9 @@ namespace count_up
         Point dragCursorPoint;
         Point dragFormPoint;
 
-        /*[DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
-        private static extern IntPtr CreateRoundRectRgn
-        (
-            int nLeftRect,     // x-coordinate of upper-left corner
-            int nTopRect,      // y-coordinate of upper-left corner
-            int nRightRect,    // x-coordinate of lower-right corner
-            int nBottomRect,   // y-coordinate of lower-right corner
-            int nWidthEllipse, // width of ellipse
-            int nHeightEllipse // height of ellipse
-        );*/
-
         public Window()
         {
             InitializeComponent();
-            //Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 15, 15));
         }
 
         private void drag_MouseDown(object sender, MouseEventArgs e)
@@ -90,8 +78,6 @@ namespace count_up
 
         private void Window_Load(object sender, EventArgs e)
         {
-            //Left = 0;
-            //Top = 995;
             if (culture.NumberFormat.NumberDecimalSeparator == "," && culture.DateTimeFormat.TimeSeparator != ".")
             {
                 cultureWeirdness = CultureWeirdnessEnum.Weird;
@@ -113,20 +99,6 @@ namespace count_up
             if (!controlcooldown.Enabled)
             {
                 controlcooldown.Enabled = true;
-                /*if (e.KeyCode == Keys.Escape)
-            {
-                if (TopMost)
-                {
-                    TopMost = false;
-                    Size = new System.Drawing.Size(400, 120);
-                }
-                else
-                {
-                    TopMost = true;
-                    Size = new System.Drawing.Size(400, 85);
-                }
-                //Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 15, 15));
-            }*/
                 if (e.KeyCode == Keys.R)
                 {
                     reset_Click(null, null);

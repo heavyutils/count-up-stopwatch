@@ -5,8 +5,8 @@ A minimal stopwatch for speedruns and the like.
 WELCOME TO COUNT-UP STOPWATCH! - 
 This is an extremely simple stopwatch, with military-grade tracking
 of elapsed time, down to milliseconds. There are zero unnecessary
-interfaces, only clock and, if enabled, timer start delay UI. There
-are no buttons though; you will need to use hotkeys. The keys are
+interfaces, only the clock, and, if enabled, timer start delay UI.
+There are no buttons though; you will rely on hotkeys. The keys are
 mapped similar to many game layouts, for compact and easy access.
 
 

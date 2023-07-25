@@ -98,9 +98,9 @@ namespace count_up
         {
             if (!controlcooldown.Enabled)
             {
-                controlcooldown.Enabled = true;
                 if (e.KeyCode == Keys.R)
                 {
+                    controlcooldown.Enabled = true;
                     reset_Click(null, null);
                     if (timer.Enabled)
                     {
@@ -112,6 +112,7 @@ namespace count_up
                 }
                 if (e.KeyCode == Keys.Space || e.KeyCode == Keys.E)
                 {
+                    controlcooldown.Enabled = true;
                     startstop_Click(null, null);
                     if (timer.Enabled)
                     {
@@ -123,6 +124,7 @@ namespace count_up
                 }
                 if (e.KeyCode == Keys.Q && !nondetailedrequired)
                 {
+                    controlcooldown.Enabled = true;
                     if (detailed)
                     {
                         detailed = false;
@@ -163,10 +165,12 @@ namespace count_up
                 }
                 if (e.KeyCode == Keys.D0 && !timer.Enabled && !timeupdate.Enabled && overflows == 0)
                 {
+                    controlcooldown.Enabled = true;
                     startstop_Click(null, null);
                 }
                 if (e.KeyCode == Keys.D1 && !timer.Enabled && !timeupdate.Enabled && overflows == 0)
                 {
+                    controlcooldown.Enabled = true;
                     timer.Enabled = true;
                     timetimer = 1;
                     overflow.Visible = true;
@@ -174,6 +178,7 @@ namespace count_up
                 }
                 if (e.KeyCode == Keys.D2 && !timer.Enabled && !timeupdate.Enabled && overflows == 0)
                 {
+                    controlcooldown.Enabled = true;
                     timer.Enabled = true;
                     timetimer = 2;
                     overflow.Visible = true;
@@ -181,6 +186,7 @@ namespace count_up
                 }
                 if (e.KeyCode == Keys.D3 && !timer.Enabled && !timeupdate.Enabled && overflows == 0)
                 {
+                    controlcooldown.Enabled = true;
                     timer.Enabled = true;
                     timetimer = 3;
                     overflow.Visible = true;
@@ -188,6 +194,7 @@ namespace count_up
                 }
                 if (e.KeyCode == Keys.D4 && !timer.Enabled && !timeupdate.Enabled && overflows == 0)
                 {
+                    controlcooldown.Enabled = true;
                     timer.Enabled = true;
                     timetimer = 4;
                     overflow.Visible = true;
@@ -195,6 +202,7 @@ namespace count_up
                 }
                 if (e.KeyCode == Keys.D5 && !timer.Enabled && !timeupdate.Enabled && overflows == 0)
                 {
+                    controlcooldown.Enabled = true;
                     timer.Enabled = true;
                     timetimer = 5;
                     overflow.Visible = true;
@@ -202,6 +210,7 @@ namespace count_up
                 }
                 if (e.KeyCode == Keys.D6 && !timer.Enabled && !timeupdate.Enabled && overflows == 0)
                 {
+                    controlcooldown.Enabled = true;
                     timer.Enabled = true;
                     timetimer = 6;
                     overflow.Visible = true;
@@ -209,6 +218,7 @@ namespace count_up
                 }
                 if (e.KeyCode == Keys.D7 && !timer.Enabled && !timeupdate.Enabled && overflows == 0)
                 {
+                    controlcooldown.Enabled = true;
                     timer.Enabled = true;
                     timetimer = 7;
                     overflow.Visible = true;
@@ -216,6 +226,7 @@ namespace count_up
                 }
                 if (e.KeyCode == Keys.D8 && !timer.Enabled && !timeupdate.Enabled && overflows == 0)
                 {
+                    controlcooldown.Enabled = true;
                     timer.Enabled = true;
                     timetimer = 8;
                     overflow.Visible = true;
@@ -223,6 +234,7 @@ namespace count_up
                 }
                 if (e.KeyCode == Keys.D9 && !timer.Enabled && !timeupdate.Enabled && overflows == 0)
                 {
+                    controlcooldown.Enabled = true;
                     timer.Enabled = true;
                     timetimer = 9;
                     overflow.Visible = true;

@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("HeavyUtils")]
 [assembly: AssemblyProduct("Count-Up")]
-[assembly: AssemblyCopyright("Copyright © HeavyUtils 2023")]
+[assembly: AssemblyCopyright("Copyright © 2023 HeavyUtils")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

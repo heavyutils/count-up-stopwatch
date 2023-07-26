@@ -91,8 +91,6 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ### Portuguese
-Licença MIT
-
 Direitos Autorais (c) 2023 HeavyUtils
 
 A permissão é concedida, gratuitamente, a qualquer pessoa que obtenha uma cópia deste software e arquivos de documentação associados (o "Software"), para utilizar o Software sem restrição, incluindo, mas não se limitando, os direitos de usar, copiar, modificar, mesclar, publicar, distribuir, sublicenciar e/ou vender cópias do Software, e de permitir que as pessoas a quem o Software é fornecido façam o mesmo, respeitando as seguintes condições:

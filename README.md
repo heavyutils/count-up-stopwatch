@@ -86,7 +86,16 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-### Português
+### French
+Droit d'auteur (c) 2023 HeavyUtils
+
+Il est accordé aux personnes qui obtiennent une copie de ce logiciel et des fichiers de documentation associés (le "Logiciel") la permission d'utiliser le Logiciel sans restriction, notamment les droits d'utiliser, de copier, de modifier, de fusionner, de publier, de distribuer, de concéder sous licence et/ou de vendre des copies du Logiciel, ainsi que de permettre aux personnes auxquelles le Logiciel est fourni d'en faire de même, sous réserve des conditions suivantes :
+
+La mention du droit d'auteur ci-dessus et la présente autorisation doivent être incluses dans toutes les copies ou les portions substantielles du Logiciel.
+
+LE LOGICIEL EST FOURNI "TEL QUEL", SANS GARANTIE D'AUCUNE SORTE, EXPRESSE OU IMPLICITE, Y COMPRIS, MAIS SANS S'Y LIMITER, LES GARANTIES DE QUALITÉ MARCHANDE, D'ADÉQUATION À UN USAGE PARTICULIER ET D'ABSENCE DE CONTREFAÇON. EN AUCUN CAS LES AUTEURS OU LES TITULAIRES DES DROITS D'AUTEUR NE SERONT RESPONSABLES DE TOUTE RÉCLAMATION, DOMMAGE OU AUTRE RESPONSABILITÉ, QUE CE SOIT DANS LE CADRE D'UN CONTRAT, D'UN DÉLIT OU AUTRE, EN LIEN AVEC LE LOGICIEL OU SON UTILISATION OU D'AUTRES ACTIONS DANS LE LOGICIEL.
+
+### Portuguese
 Direitos Autorais (c) 2023 HeavyUtils
 
 A permissão é concedida, gratuitamente, a qualquer pessoa que obtenha uma cópia deste software e arquivos de documentação associados (o "Software"), para utilizar o Software sem restrição, incluindo, mas não se limitando, os direitos de usar, copiar, modificar, mesclar, publicar, distribuir, sublicenciar e/ou vender cópias do Software, e de permitir que as pessoas a quem o Software é fornecido façam o mesmo, respeitando as seguintes condições:
@@ -95,7 +104,7 @@ O aviso de direitos autorais acima e este aviso de permissão devem ser incluíd
 
 O SOFTWARE É FORNECIDO "COMO ESTÁ", SEM GARANTIA DE QUALQUER TIPO, EXPRESSA OU IMPLÍCITA, INCLUINDO, MAS NÃO SE LIMITANDO ÀS GARANTIAS DE COMERCIALIZAÇÃO, ADEQUAÇÃO A UM FIM ESPECÍFICO E NÃO VIOLAÇÃO. EM NENHUM CASO OS AUTORES OU DETENTORES DOS DIREITOS AUTORAIS SERÃO RESPONSÁVEIS POR QUALQUER REIVINDICAÇÃO, DANOS OU OUTRAS RESPONSABILIDADES, SEJA EM AÇÃO DE CONTRATO, DELITO OU DE OUTRA FORMA, DECORRENTES DE, OU EM CONEXÃO COM O SOFTWARE OU O USO OU OUTRAS NEGOCIAÇÕES NO SOFTWARE.
 
-### Dansk
+### Danish
 Ophavsret (c) 2023 HeavyUtils
 
 Der gives tilladelse til enhver person, der får en kopi af dette software og de tilknyttede dokumentationsfiler (samlet "Softwaren"), til at anvende Softwaren uden begrænsning, herunder uden begrænsning rettighederne til at bruge, kopiere, ændre, sammenføje, offentliggøre, distribuere, underlicensere og/eller sælge kopier af Softwaren, og til at give personer, som Softwaren leveres til, tilladelse til at gøre det samme, underlagt følgende betingelser:

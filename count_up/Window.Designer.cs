@@ -356,4 +356,3 @@ namespace count_up
         private System.Windows.Forms.ToolStripMenuItem sToolStripMenuItem9;
     }
 }
-

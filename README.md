@@ -69,6 +69,7 @@ a mouse. The keys might be slow to respond, to allow for diagonals.
 12. The count-up stopwatch should appear after the build.
 
 ## License (MIT)
+### English
 Copyright (c) 2023 HeavyUtils
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -88,3 +89,23 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+### Portuguese
+Licença MIT
+
+Direitos Autorais (c) 2023 HeavyUtils
+
+A permissão é concedida, gratuitamente, a qualquer pessoa que obtenha uma cópia deste software e arquivos de documentação associados (o "Software"), para utilizar o Software sem restrição, incluindo, mas não se limitando, os direitos de usar, copiar, modificar, mesclar, publicar, distribuir, sublicenciar e/ou vender cópias do Software, e de permitir que as pessoas a quem o Software é fornecido façam o mesmo, respeitando as seguintes condições:
+
+O aviso de direitos autorais acima e este aviso de permissão devem ser incluídos em todas as cópias ou partes substanciais do Software.
+
+O SOFTWARE É FORNECIDO "COMO ESTÁ", SEM GARANTIA DE QUALQUER TIPO, EXPRESSA OU IMPLÍCITA, INCLUINDO, MAS NÃO SE LIMITANDO ÀS GARANTIAS DE COMERCIALIZAÇÃO, ADEQUAÇÃO A UM FIM ESPECÍFICO E NÃO VIOLAÇÃO. EM NENHUM CASO OS AUTORES OU DETENTORES DOS DIREITOS AUTORAIS SERÃO RESPONSÁVEIS POR QUALQUER REIVINDICAÇÃO, DANOS OU OUTRAS RESPONSABILIDADES, SEJA EM AÇÃO DE CONTRATO, DELITO OU DE OUTRA FORMA, DECORRENTES DE, OU EM CONEXÃO COM O SOFTWARE OU O USO OU OUTRAS NEGOCIAÇÕES NO SOFTWARE.
+
+### Danish
+Ophavsret (c) 2023 HeavyUtils
+
+Der gives tilladelse til enhver person, der får en kopi af dette software og de tilknyttede dokumentationsfiler (samlet "Softwaren"), til at anvende Softwaren uden begrænsning, herunder uden begrænsning rettighederne til at bruge, kopiere, ændre, sammenføje, offentliggøre, distribuere, underlicensere og/eller sælge kopier af Softwaren, og til at give personer, som Softwaren leveres til, tilladelse til at gøre det samme, underlagt følgende betingelser:
+
+Ovenstående ophavsretsmeddelelse og denne tilladelse meddelelse skal være indeholdt i alle kopier eller betydelige dele af Softwaren.
+
+SOFTWAREN LEVERES "SOM DEN ER", UDEN GARANTIER AF NOGEN ART, UDTRYKTE ELLER UNDERFORSTÅET, HERUNDER MEN IKKE BEGRÆNSET TIL GARANTIER OM SALGBARHED, EGNETHED TIL ET BESTEMT FORMÅL OG OVERTRÆDELSE. UNDER INGEN OMSTÆNDIGHEDER SKAL OPHAVSRETSHAVERNE ELLER TILLADELSESGIVERE VÆRE ANSVARLIGE FOR EVENTUELLE KRAV, SKADER ELLER ANDRE ANSVAR, UANSET OM DET ER EN KONTRAKTSAKTION, EN SKADES- ELLER ANDET, DER OPSTÅR UD AF, ELLER PÅ ANDEN MÅDE ER I FORBINDELSE MED SOFTWAREN ELLER BRUG ELLER ANDRE TILBAGEGANG AF SOFTWAREN.

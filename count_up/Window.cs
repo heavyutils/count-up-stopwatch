@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Diagnostics;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -50,9 +50,21 @@ namespace count_up
         Point dragCursorPoint;
         Point dragFormPoint;
 
+        /*[DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
+        private static extern IntPtr CreateRoundRectRgn
+        (
+            int nLeftRect,     // x-coordinate of upper-left corner
+            int nTopRect,      // y-coordinate of upper-left corner
+            int nRightRect,    // x-coordinate of lower-right corner
+            int nBottomRect,   // y-coordinate of lower-right corner
+            int nWidthEllipse, // width of ellipse
+            int nHeightEllipse // height of ellipse
+        );*/
+
         public Window()
         {
             InitializeComponent();
+            //Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 15, 15));
         }
 
         private void drag_MouseDown(object sender, MouseEventArgs e)
@@ -78,6 +90,8 @@ namespace count_up
 
         private void Window_Load(object sender, EventArgs e)
         {
+            //Left = 0;
+            //Top = 995;
             if (culture.NumberFormat.NumberDecimalSeparator == "," && culture.DateTimeFormat.TimeSeparator != ".")
             {
                 cultureWeirdness = CultureWeirdnessEnum.Weird;
@@ -98,12 +112,35 @@ namespace count_up
         {
             if (!controlcooldown.Enabled)
             {
+                /*if (e.KeyCode == Keys.Escape)
+            {
+                if (TopMost)
+                {
+                    TopMost = false;
+                    Size = new System.Drawing.Size(400, 120);
+                }
+                else
+                {
+                    TopMost = true;
+                    Size = new System.Drawing.Size(400, 85);
+                }
+                //Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 15, 15));
+            }*/
                 if (e.KeyCode == Keys.R)
                 {
+                    if (!startInToolStripMenuItem.Enabled)
+                    {
+                        startInToolStripMenuItem.Enabled = true;
+                    }
                     controlcooldown.Enabled = true;
                     reset_Click(null, null);
                     if (timer.Enabled)
                     {
+                        if (nondetailedrequired)
+                        {
+                            nondetailedrequired = false;
+                            detailedONQToolStripMenuItem.Enabled = true;
+                        }
                         timer.Enabled = false;
                         timetimer = 0;
                         overflow.Text = "Overflows: 00";
@@ -128,6 +165,7 @@ namespace count_up
                     if (detailed)
                     {
                         detailed = false;
+                        detailedONQToolStripMenuItem.Text = "Detailed OFF (Q)";
                         string elapsed = String.Empty;
                         if (cultureWeirdness == CultureWeirdnessEnum.NormalOrIrrelevant || cultureWeirdness == CultureWeirdnessEnum.Weird)
                         {
@@ -144,6 +182,7 @@ namespace count_up
                     else if (!detailed)
                     {
                         detailed = true;
+                        detailedONQToolStripMenuItem.Text = "Detailed ON (Q)";
                         string elapsed = String.Empty;
                         if (cultureWeirdness == CultureWeirdnessEnum.NormalOrIrrelevant)
                         {
@@ -170,6 +209,7 @@ namespace count_up
                 }
                 if (e.KeyCode == Keys.D1 && !timer.Enabled && !timeupdate.Enabled && overflows == 0)
                 {
+                    startInToolStripMenuItem.Enabled = false;
                     controlcooldown.Enabled = true;
                     timer.Enabled = true;
                     timetimer = 1;
@@ -178,6 +218,7 @@ namespace count_up
                 }
                 if (e.KeyCode == Keys.D2 && !timer.Enabled && !timeupdate.Enabled && overflows == 0)
                 {
+                    startInToolStripMenuItem.Enabled = false;
                     controlcooldown.Enabled = true;
                     timer.Enabled = true;
                     timetimer = 2;
@@ -186,6 +227,7 @@ namespace count_up
                 }
                 if (e.KeyCode == Keys.D3 && !timer.Enabled && !timeupdate.Enabled && overflows == 0)
                 {
+                    startInToolStripMenuItem.Enabled = false;
                     controlcooldown.Enabled = true;
                     timer.Enabled = true;
                     timetimer = 3;
@@ -194,6 +236,7 @@ namespace count_up
                 }
                 if (e.KeyCode == Keys.D4 && !timer.Enabled && !timeupdate.Enabled && overflows == 0)
                 {
+                    startInToolStripMenuItem.Enabled = false;
                     controlcooldown.Enabled = true;
                     timer.Enabled = true;
                     timetimer = 4;
@@ -202,6 +245,7 @@ namespace count_up
                 }
                 if (e.KeyCode == Keys.D5 && !timer.Enabled && !timeupdate.Enabled && overflows == 0)
                 {
+                    startInToolStripMenuItem.Enabled = false;
                     controlcooldown.Enabled = true;
                     timer.Enabled = true;
                     timetimer = 5;
@@ -210,6 +254,7 @@ namespace count_up
                 }
                 if (e.KeyCode == Keys.D6 && !timer.Enabled && !timeupdate.Enabled && overflows == 0)
                 {
+                    startInToolStripMenuItem.Enabled = false;
                     controlcooldown.Enabled = true;
                     timer.Enabled = true;
                     timetimer = 6;
@@ -218,6 +263,7 @@ namespace count_up
                 }
                 if (e.KeyCode == Keys.D7 && !timer.Enabled && !timeupdate.Enabled && overflows == 0)
                 {
+                    startInToolStripMenuItem.Enabled = false;
                     controlcooldown.Enabled = true;
                     timer.Enabled = true;
                     timetimer = 7;
@@ -226,6 +272,7 @@ namespace count_up
                 }
                 if (e.KeyCode == Keys.D8 && !timer.Enabled && !timeupdate.Enabled && overflows == 0)
                 {
+                    startInToolStripMenuItem.Enabled = false;
                     controlcooldown.Enabled = true;
                     timer.Enabled = true;
                     timetimer = 8;
@@ -234,6 +281,7 @@ namespace count_up
                 }
                 if (e.KeyCode == Keys.D9 && !timer.Enabled && !timeupdate.Enabled && overflows == 0)
                 {
+                    startInToolStripMenuItem.Enabled = false;
                     controlcooldown.Enabled = true;
                     timer.Enabled = true;
                     timetimer = 9;
@@ -319,6 +367,7 @@ namespace count_up
                 if (detailed == false)
                 {
                     detailed = true;
+                    detailedONQToolStripMenuItem.Text = "Detailed ON (Q)";
                 }
                 reset.Enabled = false;
                 if (cultureWeirdness == CultureWeirdnessEnum.NormalOrIrrelevant)
@@ -345,8 +394,10 @@ namespace count_up
                 if (detailed)
                 {
                     detailed = false;
+                    detailedONQToolStripMenuItem.Text = "Detailed OFF (Q)";
                 }
                 nondetailedrequired = true;
+                detailedONQToolStripMenuItem.Enabled = false;
             }
             if (detailed)
             {
@@ -392,22 +443,33 @@ namespace count_up
         {
             if (startstop.Text == "START")
             {
-                if (reset.Enabled)
+                /*if (reset.Enabled)
                 {
                     reset.Enabled = false;
-                }
+                    resetToolStripMenuItem.Enabled = true;
+                }*/
                 timeupdate.Enabled = true;
                 time.ForeColor = Color.DarkGreen;
                 tick.Start();
                 startstop.Text = "STOP";
+                if (startInToolStripMenuItem.Enabled)
+                {
+                    startInToolStripMenuItem.Enabled = false;
+                }
+                startToolStripMenuItem.Text = "Stop (Space, E)";
             }
             else
             {
-                reset.Enabled = true;
+                if (!reset.Enabled)
+                {
+                    reset.Enabled = true;
+                }
+                startToolStripMenuItem.Text = "Start (Space, E)";
                 timeupdate.Enabled = false;
                 time.ForeColor = SystemColors.ControlText;
                 tick.Stop();
                 startstop.Text = "START";
+                startInToolStripMenuItem.Enabled = true;
             }
         }
 
@@ -422,6 +484,7 @@ namespace count_up
             if (detailed == false)
             {
                 detailed = true;
+                detailedONQToolStripMenuItem.Text = "Detailed ON (Q)";
             }
             reset.Enabled = false;
             if (cultureWeirdness == CultureWeirdnessEnum.NormalOrIrrelevant)
@@ -440,6 +503,10 @@ namespace count_up
             {
                 timeupdate.Enabled = false;
                 startstop.Text = "START";
+            }
+            if (startToolStripMenuItem.Text == "Stop (Space, E)")
+            {
+                startToolStripMenuItem.Text = "Start (Space, E)";
             }
             hours = 0;
             minutes = 0;
@@ -533,6 +600,250 @@ namespace count_up
         private void controlcooldown_Tick(object sender, EventArgs e)
         {
             controlcooldown.Enabled = false;
+        }
+
+        private void sToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (!timer.Enabled && !timeupdate.Enabled && overflows == 0)
+            {
+                startInToolStripMenuItem.Enabled = false;
+                controlcooldown.Enabled = true;
+                timer.Enabled = true;
+                timetimer = 1;
+                overflow.Visible = true;
+                overflow.Text = "Starting in 1";
+            }
+        }
+
+        private void sToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            if (!timer.Enabled && !timeupdate.Enabled && overflows == 0)
+            {
+                startInToolStripMenuItem.Enabled = false;
+                controlcooldown.Enabled = true;
+                timer.Enabled = true;
+                timetimer = 2;
+                overflow.Visible = true;
+                overflow.Text = "Starting in 2";
+            }
+        }
+
+        private void sToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            if (!timer.Enabled && !timeupdate.Enabled && overflows == 0)
+            {
+                startInToolStripMenuItem.Enabled = false;
+                controlcooldown.Enabled = true;
+                timer.Enabled = true;
+                timetimer = 3;
+                overflow.Visible = true;
+                overflow.Text = "Starting in 3";
+            }
+        }
+
+        private void sToolStripMenuItem4_Click(object sender, EventArgs e)
+        {
+            if (!timer.Enabled && !timeupdate.Enabled && overflows == 0)
+            {
+                startInToolStripMenuItem.Enabled = false;
+                controlcooldown.Enabled = true;
+                timer.Enabled = true;
+                timetimer = 4;
+                overflow.Visible = true;
+                overflow.Text = "Starting in 4";
+            }
+        }
+
+        private void sToolStripMenuItem5_Click(object sender, EventArgs e)
+        {
+            if (!timer.Enabled && !timeupdate.Enabled && overflows == 0)
+            {
+                startInToolStripMenuItem.Enabled = false;
+                controlcooldown.Enabled = true;
+                timer.Enabled = true;
+                timetimer = 5;
+                overflow.Visible = true;
+                overflow.Text = "Starting in 5";
+            }
+        }
+
+        private void sToolStripMenuItem6_Click(object sender, EventArgs e)
+        {
+            if (!timer.Enabled && !timeupdate.Enabled && overflows == 0)
+            {
+                startInToolStripMenuItem.Enabled = false;
+                controlcooldown.Enabled = true;
+                timer.Enabled = true;
+                timetimer = 6;
+                overflow.Visible = true;
+                overflow.Text = "Starting in 6";
+            }
+        }
+
+        private void sToolStripMenuItem7_Click(object sender, EventArgs e)
+        {
+            if (!timer.Enabled && !timeupdate.Enabled && overflows == 0)
+            {
+                startInToolStripMenuItem.Enabled = false;
+                controlcooldown.Enabled = true;
+                timer.Enabled = true;
+                timetimer = 7;
+                overflow.Visible = true;
+                overflow.Text = "Starting in 7";
+            }
+        }
+
+        private void sToolStripMenuItem8_Click(object sender, EventArgs e)
+        {
+            if (!timer.Enabled && !timeupdate.Enabled && overflows == 0)
+            {
+                startInToolStripMenuItem.Enabled = false;
+                controlcooldown.Enabled = true;
+                timer.Enabled = true;
+                timetimer = 8;
+                overflow.Visible = true;
+                overflow.Text = "Starting in 8";
+            }
+        }
+
+        private void sToolStripMenuItem9_Click(object sender, EventArgs e)
+        {
+            if (!timer.Enabled && !timeupdate.Enabled && overflows == 0)
+            {
+                startInToolStripMenuItem.Enabled = false;
+                controlcooldown.Enabled = true;
+                timer.Enabled = true;
+                timetimer = 9;
+                overflow.Visible = true;
+                overflow.Text = "Starting in 9";
+            }
+        }
+
+        private void topLeftToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Opacity = 0;
+            Left = 0;
+            Top = 0;
+            Opacity = 1;
+        }
+
+        private void topRightToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Opacity = 0;
+            Left = Screen.PrimaryScreen.Bounds.Width - 400;
+            Top = 0;
+            Opacity = 1;
+        }
+
+        private void bottomLeftToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Opacity = 0;
+            Left = 0;
+            Top = Screen.PrimaryScreen.Bounds.Height - 85;
+            Opacity = 1;
+        }
+
+        private void bottomRightToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Opacity = 0;
+            Left = Screen.PrimaryScreen.Bounds.Width - 400;
+            Top = Screen.PrimaryScreen.Bounds.Height - 85;
+            Opacity = 1;
+        }
+
+        private void topToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Opacity = 0;
+            Left = Screen.PrimaryScreen.Bounds.Width / 2 - 200;
+            Top = 0;
+            Opacity = 1;
+        }
+
+        private void bottomToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Opacity = 0;
+            Left = Screen.PrimaryScreen.Bounds.Width / 2 - 200;
+            Top = Screen.PrimaryScreen.Bounds.Height - 85;
+            Opacity = 1;
+        }
+
+        private void startToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            controlcooldown.Enabled = true;
+            startstop_Click(null, null);
+            if (timer.Enabled)
+            {
+                timer.Enabled = false;
+                timetimer = 0;
+                overflow.Text = "Overflows: 00";
+                overflow.Visible = false;
+            }
+        }
+
+        private void resetToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (!startInToolStripMenuItem.Enabled)
+            {
+                startInToolStripMenuItem.Enabled = true;
+            }
+            controlcooldown.Enabled = true;
+            reset_Click(null, null);
+            if (timer.Enabled)
+            {
+                if (nondetailedrequired)
+                {
+                    nondetailedrequired = false;
+                    detailedONQToolStripMenuItem.Enabled = true;
+                }
+                timer.Enabled = false;
+                timetimer = 0;
+                overflow.Text = "Overflows: 00";
+                overflow.Visible = false;
+            }
+        }
+
+        private void detailedONQToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            controlcooldown.Enabled = true;
+            if (detailed)
+            {
+                detailed = false;
+                detailedONQToolStripMenuItem.Text = "Detailed OFF (Q)";
+                string elapsed = String.Empty;
+                if (cultureWeirdness == CultureWeirdnessEnum.NormalOrIrrelevant || cultureWeirdness == CultureWeirdnessEnum.Weird)
+                {
+                    elapsed = String.Format("{0:00}:{1:00}:{2:00}",
+                    hours, minutes, seconds);
+                }
+                else if (cultureWeirdness == CultureWeirdnessEnum.VeryWeird)
+                {
+                    elapsed = String.Format("{0:00}.{1:00}.{2:00}",
+                    hours, minutes, seconds);
+                }
+                time.Text = elapsed;
+            }
+            else if (!detailed)
+            {
+                detailed = true;
+                detailedONQToolStripMenuItem.Text = "Detailed ON (Q)";
+                string elapsed = String.Empty;
+                if (cultureWeirdness == CultureWeirdnessEnum.NormalOrIrrelevant)
+                {
+                    elapsed = String.Format("{0:00}:{1:00}.{2:00}",
+                    minutes, seconds, fractions);
+                }
+                else if (cultureWeirdness == CultureWeirdnessEnum.Weird)
+                {
+                    elapsed = String.Format("{0:00}:{1:00},{2:00}",
+                    minutes, seconds, fractions);
+                }
+                else if (cultureWeirdness == CultureWeirdnessEnum.VeryWeird)
+                {
+                    elapsed = String.Format("{0:00}.{1:00},{2:00}",
+                    minutes, seconds, fractions);
+                }
+                time.Text = elapsed;
+            }
         }
     }
 }

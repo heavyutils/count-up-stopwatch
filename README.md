@@ -64,6 +64,12 @@ a mouse. The keys might be slow to respond, to allow for diagonals.
 11. It should build without errors.
 12. The count-up stopwatch should appear after the build.
 
+### Compiler errors or problems? Try these fixes
+There might occur errors if:
+1. Make sure that .NET 4.8 is installed together with Visual Studio. You can try converting it to the closest version of .NET newer than .NET 4.8, if that version isn’t installed. Otherwise, you can download and install .NET 4.8 on the linked .NET website.
+2. Make sure to actually open the solution, and not the project files. Visual Studio doesn’t find the solution if you don’t open the solution.
+3. Make sure that you’re opening it with Visual Studio and not another editor.
+
 ## License (MIT)
 ### English
 Copyright (c) 2023 HeavyUtils

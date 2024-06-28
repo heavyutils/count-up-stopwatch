@@ -51,6 +51,7 @@ These hotkeys can quickly change the timer's position, without using
 a mouse. The keys might be slow to respond, to allow for diagonals.
 
 ## Downloading source and editing for absolute beginners
+**You don't need to do this to download normally. If you're just a normal users, head to the [releases](http://github.com/heavyutils/count-up-stopwatch/releases) page.**
 1. Download and install Visual Studio 2022. Visual Studio 2019 is also usable.
 2. Head to the top of this page, and click the "Code" button.
 3. Click "Download ZIP".
